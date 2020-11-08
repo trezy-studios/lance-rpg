@@ -1,0 +1,45 @@
+{
+  "name": "@a-monsters-nature/desktop",
+  "version": "0.0.0",
+  "author": "Trezy <tre@trezy.com>",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trezy-studios/lance-rpg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trezy-studios/lance-rpg/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/trezy"
+  },
+  "scripts": {
+    "start": "next dev"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0"
+  },
+  "dependencies": {
+		"@babel/core": "^7.12.3",
+		"@babel/plugin-proposal-class-properties": "^7.12.1",
+		"@babel/plugin-proposal-export-default-from": "^7.12.1",
+		"@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+		"@babel/plugin-proposal-optional-chaining": "^7.12.1",
+		"@babel/plugin-proposal-private-methods": "^7.12.1",
+		"@babel/plugin-syntax-top-level-await": "^7.12.1",
+		"@babel/preset-env": "^7.12.1",
+    "classnames": "^2.2.6",
+    "localforage": "^1.9.0",
+    "next": "^10.0.0",
+    "nprogress": "^0.2.0",
+		"postcss-easy-import": "^3.0.0",
+		"postcss-flexbugs-fixes": "^4.2.1",
+		"postcss-preset-env": "^6.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.28.0",
+    "uuid": "^8.3.1",
+    "webpack": "^5.3.2"
+  }
+}
