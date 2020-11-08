@@ -1,0 +1,37 @@
+{
+	"name": "a-monsters-nature",
+	"private": true,
+	"scripts": {
+		"bootstrap": "lerna bootstrap",
+		"bootstrap:dev": "lerna bootstrap --force-local",
+		"build:designer": "lerna run build --scope @b-frame/designer",
+		"build:desktop": "lerna run build --scope @b-frame/desktop",
+		"build:game": "lerna run build --scope @b-frame/game",
+		"build:website": "lerna run build --scope @b-frame/website",
+		"build": "lerna run build --parallel",
+		"cz": "cz",
+		"dev": "lerna run dev",
+		"link": "lerna link",
+		"test:designer": "lerna run test --scope @b-frame/designer",
+		"test:desktop": "lerna run test --scope @b-frame/desktop",
+		"test:game": "lerna run test --scope @b-frame/game",
+		"test:website": "lerna run test --scope @b-frame/website",
+		"test": "lerna run test --parallel"
+	},
+	"workspaces": [
+		"packages/designer",
+		"packages/desktop",
+		"packages/game",
+		"packages/website"
+	],
+	"dependencies": {
+		"@a-monsters-nature/designer": "file:packages/designer",
+		"@a-monsters-nature/desktop": "file:packages/desktop",
+		"@a-monsters-nature/game": "file:packages/game",
+		"@a-monsters-nature/website": "file:packages/website"
+	},
+	"devDependencies": {
+		"core-js": "3",
+		"lerna": "^3.22.1"
+	}
+}

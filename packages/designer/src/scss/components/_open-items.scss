@@ -1,0 +1,43 @@
+.open-items {
+	border-color: var(--dark-grey);
+	border-style: solid;
+	border-bottom-width: 0.1rem;
+	max-width: 100%;
+	overflow: hidden;
+
+	ol {
+		display: flex;
+		max-width: 100%;
+		overflow: auto;
+	}
+
+	.open-item {
+		border-color: var(--dark-grey);
+		border-style: solid;
+		border-right-width: 0.1rem;
+		display: flex;
+		transition-duration: 0.1s;
+		transition-property: background-color;
+
+		&:focus,
+		&:focus-within,
+		&:hover,
+		&.active {
+			background-color: var(--dark-grey);
+		}
+
+		button {
+			outline: none;
+		}
+	}
+
+	.close-item {
+		padding: var(--gutter);
+	}
+
+	.focus-item {
+		padding: var(--gutter);
+		padding-right: 0;
+		white-space: nowrap;
+	}
+}

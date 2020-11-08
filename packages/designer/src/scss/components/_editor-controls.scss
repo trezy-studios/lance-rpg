@@ -1,0 +1,20 @@
+.editor-controls {
+	border-color: var(--dark-grey);
+	border-style: solid;
+	border-top-width: 0.1rem;
+
+	button {
+		padding: var(--gutter);
+	}
+
+	.fieldset {
+		border-color: var(--dark-grey);
+		border-style: solid;
+		border-right-width: 0.1rem;
+		padding-left: var(--gutter);
+
+		&:last-of-type {
+			border-right-width: 0;
+		}
+	}
+}

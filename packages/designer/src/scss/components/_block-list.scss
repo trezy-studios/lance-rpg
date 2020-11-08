@@ -1,0 +1,32 @@
+.block-list {
+	> li {
+		background-color: var(--deep-grey);
+		padding: var(--gutter);
+		display: grid;
+		gap: var(--gutter);
+		grid-template-areas:
+			'image details'
+			'image menu';
+		grid-template-columns: 20% auto;
+		overflow: hidden;
+
+		> img {
+			grid-area: image;
+		}
+
+		> .details {
+			grid-area: details;
+		}
+
+		> menu {
+			display: flex;
+			grid-area: menu;
+		}
+
+		+ li {
+			border-top-color: var(--grey);
+			border-top-style: solid;
+			border-top-width: 0.2rem;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+#modal-portal {
+	align-items: center;
+	background-color: hsla(var(--black-hsl), 0.7);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	&:empty {
+		display: none;
+	}
+}

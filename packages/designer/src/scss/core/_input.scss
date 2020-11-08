@@ -1,0 +1,23 @@
+input {
+	&[type=email],
+	&[type=password],
+	&[type=text],
+	&[type=url] {
+		background: none;
+		border: none;
+		border-bottom-color: var(--grey);
+		border-bottom-style: solid;
+		border-bottom-width: 0.2rem;
+		color: inherit;
+		font-family: inherit;
+		font-size: inherit;
+		padding: 0;
+		transition-duration: 0.1s;
+		transition-property: border-bottom-color;
+
+		&:focus,
+		&:hover {
+			border-bottom-color: var(--white);
+		}
+	}
+}

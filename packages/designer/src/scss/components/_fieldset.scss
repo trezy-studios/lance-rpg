@@ -1,0 +1,21 @@
+.fieldset {
+	align-items: baseline;
+	display: flex;
+	flex-direction: column;
+
+	> label {
+		margin-bottom: 0.5rem;
+	}
+
+	&.horizontal {
+		flex-direction: row;
+
+		> label {
+			margin-right: var(--gutter);
+		}
+	}
+
+	+ .fieldset {
+		margin-top: var(--gutter);
+	}
+}
