@@ -1,0 +1,24 @@
+@keyframes mage-idle-down {
+	from {
+		background-position: 0 192px;
+	}
+	to {
+		background-position: -96px 192px;
+	}
+}
+
+.character {
+  background-image: url('/images/characters/mage.png');
+  height: 32px;
+	width: 32px;
+
+	&.mage {
+		&[data-direction=down] {
+			&[data-state=idle] {
+				animation-duration: 1s;
+				animation-name: mage-idle-down;
+				animation-timing-function: steps(4);
+			}
+		}
+	}
+}
