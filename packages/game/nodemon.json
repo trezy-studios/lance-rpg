@@ -1,0 +1,10 @@
+{
+	"ignore": [
+    "dist/*",
+    "lib/index.js",
+    "lib/client/*",
+    "lib/images/*",
+    "webpack.config.js",
+    "README.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"presets": [
+		["@babel/preset-env", {
+			"targets": {
+				"chrome": "85"
+			}
+		}]
+	],
+	"plugins": [
+		["module-resolver", {
+			"root": ["./lib"]
+		}],
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-proposal-export-default-from",
+		"@babel/plugin-proposal-export-namespace-from",
+		"@babel/plugin-proposal-optional-chaining",
+		"@babel/plugin-proposal-private-methods",
+		"@babel/plugin-syntax-top-level-await"
+	]
+}
